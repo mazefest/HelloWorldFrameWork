@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		2E1EA06B2669709D00D1AAC4 /* HelloWorldFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E1EA0692669709D00D1AAC4 /* HelloWorldFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2E1EA0722669728A00D1AAC4 /* HelloComputer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E1EA0712669728A00D1AAC4 /* HelloComputer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2E1EA0662669709D00D1AAC4 /* HelloWorldFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HelloWorldFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E1EA0692669709D00D1AAC4 /* HelloWorldFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HelloWorldFramework.h; sourceTree = "<group>"; };
 		2E1EA06A2669709D00D1AAC4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2E1EA0712669728A00D1AAC4 /* HelloComputer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloComputer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +49,7 @@
 			isa = PBXGroup;
 			children = (
 				2E1EA0692669709D00D1AAC4 /* HelloWorldFramework.h */,
+				2E1EA0712669728A00D1AAC4 /* HelloComputer.swift */,
 				2E1EA06A2669709D00D1AAC4 /* Info.plist */,
 			);
 			path = HelloWorldFramework;
@@ -94,6 +97,7 @@
 				TargetAttributes = {
 					2E1EA0652669709D00D1AAC4 = {
 						CreatedOnToolsVersion = 12.5;
+						LastSwiftMigration = 1250;
 					};
 				};
 			};
@@ -130,6 +134,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E1EA0722669728A00D1AAC4 /* HelloComputer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +266,8 @@
 		2E1EA06F2669709D00D1AAC4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = KPK2BX5PW8;
@@ -277,6 +284,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.mayhem.HelloWorldFramework;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -285,6 +293,8 @@
 		2E1EA0702669709D00D1AAC4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = KPK2BX5PW8;
